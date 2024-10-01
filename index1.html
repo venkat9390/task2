@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Company Directory Portal</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Employee Registration Form</h2>
+            <form class="registration-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" class="full-name" name="full-name" required>
+                <label for="email">Email:</label>
+                <input type="email" class="email" name="email" required>
+                <label for="department">Department:</label>
+                <select class="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="HR">HR</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="IT">IT</option>
+                </select>
+                <label for="employee-id">Employee ID:</label>
+                <input type="number" class="employee-id" name="employee-id" required>
+                <label for="profile-picture-url">Profile Picture URL:</label>
+                <input type="url" class="profile-picture-url" name="profile-picture-url" required>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+        <section class="employee-list-section">
+            <h2>Employee List</h2>
+            <ol class="employee-list">
+                <li><a href="#" data-id="1">Venkat Kona</a></li>
+                <li><a href="#" data-id="2">Divya Avvari</a></li>
+                <li><a href="#" data-id="3">NagaBabu KOna</a></li>
+            </ol>
+        </section>
+        <section class="employee-details-section">
+            <h2>Employee Details</h2>
+            <table class="employee-details-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee ID</th>
+                        <th>Department</th>
+                        <th>Profile Picture</th>
+                    </tr>
+                </thead>
+                <tbody class="employee-details-tbody">
+                    <tr>
+                        <td>Venkat Kona</td>
+                        <td>101</td>
+                        <td>IT</td>
+                        <td><img src="josh.jpeg" alt="venkat Profile Picture" height="250px" width="200px"></td>
+                    </tr>
+                    <tr>
+                        <td>Divya Avvari</td>
+                        <td>102</td>
+                        <td>Marketing</td>
+                        <td><img src="divya.jpeg" alt="Divya Profile Picture" height="250px" width="200px"></td>
+                    </tr>
+                    <tr>
+                        <td>Nagababu Kona</td>
+                        <td>103</td>
+                        <td>Testing</td>
+                        <td><img src="nag.jpeg" alt="Venkat Profile Picture" height="250px" width="200px"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="map-section">
+            <h2>Company Location</h2>
+            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=WIPRO%20Limited,%2050-75-23/10%20Rama%20Talkies%20Road,%20STPI,%20Old%20TB%20Hospital%20Area,%20Resapuvanipalem,%20Visakhapatnam,%20Andhra%20Pradesh%20530013+(wipro)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a> width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+    </main>
+</body>
+</html>
